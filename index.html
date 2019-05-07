@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    input{
+height: 25px;
+padding: 10px;
+width: 80%;
+    }
+    button{
+    padding: 7px;
+    float: right;
+    margin: none !important;
+}
+li{
+    /* margin: 5px; */
+    padding: 15px;
+    border: 1px solid;
+    list-style-type: none;
+    margin: 5px;
+
+    
+}
+#ulist{
+    border: 1px solid;
+}
+#maindiv{
+width: 30%;
+border: 1px solid;
+margin: auto;
+padding: 10px;
+background-color: gray;
+}
+#add{
+    padding: 7px; 
+    height: 47px;
+    width: 45px; 
+}
+    </style>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB9bZQ0KZtaqFSsJvI1asDV-9P31MbXhOQ",
+    authDomain: "quiz-98534.firebaseapp.com",
+    databaseURL: "https://quiz-98534.firebaseio.com",
+    projectId: "quiz-98534",
+    storageBucket: "quiz-98534.appspot.com",
+    messagingSenderId: "256581710666",
+    appId: "1:256581710666:web:af839c4f00e2baa9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+    <div id="maindiv">
+   <input type="text" id="inpt">
+<button onclick="addme()" id="add">Add</button>
+<p id="ulist"></p>
+    <!-- <li id="list"></li> -->
+<!-- </ul> -->
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
